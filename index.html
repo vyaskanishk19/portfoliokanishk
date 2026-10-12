@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanishk Vyas — First Year B.Tech Computer Science Engineering Student. Personal digital headquarters, experiments, and technical journey.">
+  <meta name="author" content="Kanishk Vyas">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>Kanishk Vyas — Digital HQ / 01</title>
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Subtle Cursor Follower (Desktop Only) -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- System Top Bar -->
+  <header class="system-header" role="banner">
+    <div class="system-bar-inner">
+      <div class="brand-zone">
+        <a href="#hero" class="brand-mark" aria-label="Kanishk Vyas Home">
+          <span class="brand-symbol">KV/01</span>
+          <span class="brand-sub">DIGITAL HQ</span>
+        </a>
+        <div class="status-indicator-pill" role="status" aria-live="polite">
+          <span class="status-beacon"></span>
+          <span class="status-text">BUILDING IN PUBLIC</span>
+        </div>
+      </div>
+
+      <!-- Live Environmental Telemetry -->
+      <div class="telemetry-zone" aria-hidden="true">
+        <span class="telemetry-item"><span class="label">LOC</span> JAIPUR, IN [26.91°N, 75.78°E]</span>
+        <span class="telemetry-separator">/</span>
+        <span class="telemetry-item"><span class="label">IST</span> <span id="telemetry-clock">00:00:00</span></span>
+        <span class="telemetry-separator">/</span>
+        <span class="telemetry-item"><span class="label">STATUS</span> SEM 01 CSE</span>
+      </div>
+
+      <!-- Navigation System (5 Canonical Sections) -->
+      <nav class="primary-nav" id="primary-navigation" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="#hero" class="nav-link active" data-nav="hero"><span class="nav-num">01</span><span class="nav-label">INDEX</span></a></li>
+          <li><a href="#about" class="nav-link" data-nav="about"><span class="nav-num">02</span><span class="nav-label">ABOUT</span></a></li>
+          <li><a href="#experiments" class="nav-link" data-nav="experiments"><span class="nav-num">03</span><span class="nav-label">EXPERIMENTS</span></a></li>
+          <li><a href="#toolkit" class="nav-link" data-nav="toolkit"><span class="nav-num">04</span><span class="nav-label">TOOLKIT</span></a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact"><span class="nav-num">05</span><span class="nav-label">CONTACT</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Terminal Fast Toggle & Mobile Menu Trigger -->
+      <div class="header-action-zone">
+        <a href="#terminal" class="term-toggle-btn" data-nav="terminal" aria-label="Quick jump to digital terminal">
+          <span class="term-prompt-icon">&gt;_</span>
+          <span class="term-toggle-text">WORKSTATION</span>
+        </a>
+        <button type="button" class="mobile-menu-toggle" id="menu-toggle-btn" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Collapsible Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <span class="drawer-title">NAVIGATION DIRECTORY</span>
+        <span class="drawer-tag">[KV/HQ]</span>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link" data-mobile-nav><span class="m-num">01</span><span class="m-text">INDEX</span><span class="m-arr">→</span></a></li>
+        <li><a href="#about" class="mobile-nav-link" data-mobile-nav><span class="m-num">02</span><span class="m-text">ABOUT</span><span class="m-arr">→</span></a></li>
+        <li><a href="#experiments" class="mobile-nav-link" data-mobile-nav><span class="m-num">03</span><span class="m-text">EXPERIMENTS</span><span class="m-arr">→</span></a></li>
+        <li><a href="#toolkit" class="mobile-nav-link" data-mobile-nav><span class="m-num">04</span><span class="m-text">TOOLKIT</span><span class="m-arr">→</span></a></li>
+        <li><a href="#contact" class="mobile-nav-link" data-mobile-nav><span class="m-num">05</span><span class="m-text">CONTACT</span><span class="m-arr">→</span></a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <div class="mobile-github-row">
+          <span>GITHUB ARCHIVE:</span>
+          <a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer" class="link-external">@vyaskanishk19 ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+
+    <!-- ==============================================
+         01 / UNIQUE LANDING EXPERIENCE (HERO)
+         ============================================== -->
+    <section id="hero" class="hero-section" aria-label="Introduction">
+      <div class="container hero-container">
+        
+        <!-- Top Editorial Meta Coordinates -->
+        <div class="hero-meta-bar" aria-hidden="true">
+          <div class="meta-block">
+            <span class="meta-tag">SYS // ARCHITECTURE</span>
+            <span class="meta-value">B.TECH CSE / FIRST YEAR</span>
+          </div>
+          <div class="meta-block">
+            <span class="meta-tag">COORDINATES</span>
+            <span class="meta-value">JAIPUR, RAJASTHAN, INDIA</span>
+          </div>
+          <div class="meta-block">
+            <span class="meta-tag">STATUS</span>
+            <span class="meta-value">EXPLORING • COMPILING • LEARNING</span>
+          </div>
+          <div class="meta-block highlight-block">
+            <span class="meta-tag">VERSION</span>
+            <span class="meta-value">KV-2024.1_STU</span>
+          </div>
+        </div>
+
+        <!-- Monumental Typographic Showcase -->
+        <div class="hero-typo-stage">
+          <div class="typo-backdrop-grid" aria-hidden="true"></div>
+
+          <!-- Technical Corner Annotations -->
+          <div class="tech-annotation top-left" aria-hidden="true">
+            <span class="anno-cross">+</span>
+            <span class="anno-text">COMPUTER SCIENCE / 01</span>
+          </div>
+          <div class="tech-annotation top-right" aria-hidden="true">
+            <span class="anno-cross">+</span>
+            <span class="anno-text">CURRENTLY LEARNING</span>
+          </div>
+          <div class="tech-annotation bottom-left" aria-hidden="true">
+            <span class="anno-cross">+</span>
+            <span class="anno-text">DIGITAL EXPERIMENTS</span>
+          </div>
+          <div class="tech-annotation bottom-right" aria-hidden="true">
+            <span class="anno-cross">+</span>
+            <span class="anno-text">JAIPUR, INDIA</span>
+          </div>
+
+          <!-- Large Architectural Name Display -->
+          <div class="hero-name-composition" aria-label="Kanishk Vyas">
+            <div class="name-line line-first">
+              <span class="name-letter-group">KANISHK</span>
+              <span class="name-superscript" aria-hidden="true">[01]</span>
+            </div>
+            <div class="name-line line-second">
+              <span class="name-offset-bracket" aria-hidden="true">//</span>
+              <span class="name-letter-group">VYAS</span>
+              <span class="name-badge-pill" aria-hidden="true">STUDENT ENGR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Pitch & Call-to-Actions -->
+        <div class="hero-narrative-grid">
+          <div class="hero-headline-column">
+            <p class="section-micro-label">[ MANIFESTO // 01 ]</p>
+            <h1 class="hero-main-headline">Curiosity, compiled into code.</h1>
+          </div>
+
+          <div class="hero-bio-column">
+            <p class="hero-supporting-text">
+              I'm <strong class="text-highlight">Kanishk Vyas</strong> — a first-year Computer Science Engineering student exploring code, technology, and ideas that can become real products.
+            </p>
+            <p class="hero-secondary-note">
+              Navigating software engineering from fundamental memory pointers to modern web architecture, with curiosity at every compiler stage.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#experiments" class="cta-button primary-cta" id="hero-explore-btn">
+                <span class="cta-text">EXPLORE MY WORK</span>
+                <span class="cta-icon" aria-hidden="true">↓</span>
+              </a>
+
+              <a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer" class="cta-button secondary-cta" aria-label="Visit Kanishk's GitHub profile (opens in new tab)">
+                <span class="cta-text">VISIT GITHUB</span>
+                <span class="cta-icon-ext" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Ticker Strip -->
+        <div class="hero-ticker-band" aria-hidden="true">
+          <div class="ticker-track">
+            <span class="ticker-item">● FIRST-YEAR B.TECH CSE</span>
+            <span class="ticker-item">◆ SYSTEMS PROGRAMMING &amp; DATA LOGIC</span>
+            <span class="ticker-item">▲ CYBERSECURITY EXPLORATION</span>
+            <span class="ticker-item">■ EXPERIMENTAL FRONTEND</span>
+            <span class="ticker-item">● BUILDING IN PUBLIC</span>
+            <span class="ticker-item">◆ JAIPUR, INDIA</span>
+            <span class="ticker-item">● FIRST-YEAR B.TECH CSE</span>
+            <span class="ticker-item">◆ SYSTEMS PROGRAMMING &amp; DATA LOGIC</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         02 / ABOUT SECTION ("THE PERSON BEHIND THE PIXELS")
+         ============================================== -->
+    <section id="about" class="about-section section-boundary" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div class="section-index-tag">
+            <span class="idx-number">02</span>
+            <span class="idx-title">PROFILE &amp; IDENTITY</span>
+          </div>
+          <div class="section-breadcrumbs" aria-hidden="true">
+            INDEX // ABOUT // KANISHK VYAS
+          </div>
+        </div>
+
+        <div class="about-editorial-layout">
+          
+          <!-- Left Column: Large Editorial Heading & Abstract Schematic Blueprint -->
+          <div class="about-left-col">
+            <h2 id="about-heading" class="about-massive-heading">Still learning.<br><span class="heading-accent">Always building.</span></h2>
+            
+            <!-- Architectural Student Spec Card -->
+            <div class="blueprint-card" aria-label="Student Engineer Schematic">
+              <div class="blueprint-card-header">
+                <span class="bp-spec">SPEC // 01.A</span>
+                <span class="bp-title">ENGINEERING ROADMAP</span>
+                <span class="bp-code">B.TECH CSE</span>
+              </div>
+              <div class="blueprint-graphic" aria-hidden="true">
+                <svg viewBox="0 0 400 180" class="blueprint-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Grid backdrop -->
+                  <defs>
+                    <pattern id="bpGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 71, 255, 0.12)" stroke-width="0.8"/>
+                    </pattern>
+                  </defs>
+                  <rect width="400" height="180" fill="url(#bpGrid)" />
+
+                  <!-- Timeline nodes -->
+                  <path d="M 40 90 L 150 90 L 260 90 L 360 90" stroke="#0047ff" stroke-width="1.5" stroke-dasharray="4 4" />
+                  
+                  <!-- Node 1: Active -->
+                  <circle cx="50" cy="90" r="14" fill="#f7f6f2" stroke="#0047ff" stroke-width="2" />
+                  <circle cx="50" cy="90" r="5" fill="#0047ff" />
+                  <text x="50" y="55" fill="#121214" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">SEM 01</text>
+                  <text x="50" y="125" fill="#0047ff" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">ACTIVE NOW</text>
+                  <text x="50" y="140" fill="#666" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">Fundamentals</text>
+
+                  <!-- Node 2: Next -->
+                  <circle cx="160" cy="90" r="10" fill="#f7f6f2" stroke="#888" stroke-width="1.5" />
+                  <circle cx="160" cy="90" r="3" fill="#888" />
+                  <text x="160" y="55" fill="#121214" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle">SEM 02-04</text>
+                  <text x="160" y="125" fill="#666" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">CORE SYSTEMS</text>
+                  <text x="160" y="140" fill="#888" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">Data Structures</text>
+
+                  <!-- Node 3: Future -->
+                  <circle cx="280" cy="90" r="10" fill="#f7f6f2" stroke="#bbb" stroke-width="1.5" />
+                  <text x="280" y="55" fill="#121214" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle">SEM 05-08</text>
+                  <text x="280" y="125" fill="#888" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">SPECIALIZATION</text>
+                  <text x="280" y="140" fill="#aaa" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">Sec &amp; Products</text>
+
+                  <!-- Decorative crosshairs -->
+                  <path d="M 370 20 L 370 30 M 365 25 L 375 25" stroke="#0047ff" stroke-width="1.2" />
+                  <path d="M 30 160 L 30 170 M 25 165 L 35 165" stroke="#0047ff" stroke-width="1.2" />
+                </svg>
+              </div>
+              <div class="blueprint-card-footer">
+                <span class="bp-status">STATUS: UNDERGRADUATE EXPEDITION</span>
+                <span class="bp-id">KV#2024-28</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Authentic Editorial Profile & Identity Ledger -->
+          <div class="about-right-col">
+            <div class="about-narrative-prose">
+              <p class="lead-prose">
+                I'm <strong>Kanishk Vyas</strong>, a first-year B.Tech Computer Science Engineering student. I'm interested in understanding how technology works, learning to code, exploring cybersecurity, and discovering how ideas turn into useful products.
+              </p>
+              <p class="secondary-prose">
+                This portfolio is a living record of what I'm learning, what I'm building, and what I want to explore next. Rather than waiting for senior year to begin writing software, I'm documenting the process of acquiring software craft from day one.
+              </p>
+            </div>
+
+            <!-- Compact Identity Panel (Editorial Ledger) -->
+            <div class="identity-ledger" aria-label="Identity Specifications">
+              <div class="ledger-header">
+                <span class="ledger-title">// IDENTITY SPECIFICATION</span>
+                <span class="ledger-badge">VERIFIED</span>
+              </div>
+              <dl class="ledger-grid">
+                <div class="ledger-entry">
+                  <dt class="ledger-label">NAME</dt>
+                  <dd class="ledger-value">KANISHK VYAS</dd>
+                </div>
+                <div class="ledger-entry">
+                  <dt class="ledger-label">EDUCATION</dt>
+                  <dd class="ledger-value">B.TECH COMPUTER SCIENCE &amp; ENGINEERING</dd>
+                </div>
+                <div class="ledger-entry">
+                  <dt class="ledger-label">YEAR</dt>
+                  <dd class="ledger-value highlight-val">FIRST YEAR (UNDERGRADUATE)</dd>
+                </div>
+                <div class="ledger-entry">
+                  <dt class="ledger-label">GITHUB</dt>
+                  <dd class="ledger-value">
+                    <a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer" class="ledger-link">@vyaskanishk19 ↗</a>
+                  </dd>
+                </div>
+                <div class="ledger-entry">
+                  <dt class="ledger-label">LOCATION</dt>
+                  <dd class="ledger-value">JAIPUR, RAJASTHAN, INDIA</dd>
+                </div>
+                <div class="ledger-entry">
+                  <dt class="ledger-label">AFFILIATION</dt>
+                  <dd class="ledger-value">INDEPENDENT STUDENT DEVELOPER</dd>
+                </div>
+              </dl>
+            </div>
+
+            <!-- Current Focus Areas (Interactive Cards) -->
+            <div class="current-focus-zone">
+              <div class="focus-zone-title">
+                <span class="focus-bracket">[</span> CURRENT FOCUS &amp; ACTIVE INQUIRY <span class="focus-bracket">]</span>
+              </div>
+              
+              <ul class="focus-cards-list">
+                <li class="focus-card">
+                  <div class="fc-number">01</div>
+                  <div class="fc-body">
+                    <h3 class="fc-title">Programming Fundamentals</h3>
+                    <p class="fc-desc">Mastering structured programming in C and C++, foundational memory models, pointers, and computational thinking.</p>
+                  </div>
+                </li>
+                <li class="focus-card">
+                  <div class="fc-number">02</div>
+                  <div class="fc-body">
+                    <h3 class="fc-title">Web Development</h3>
+                    <p class="fc-desc">Building resilient, accessible digital interfaces using semantic HTML5, modern CSS architectures, and vanilla JavaScript.</p>
+                  </div>
+                </li>
+                <li class="focus-card">
+                  <div class="fc-number">03</div>
+                  <div class="fc-body">
+                    <h3 class="fc-title">Problem-Solving</h3>
+                    <p class="fc-desc">Developing structured problem-solving habits, exploring algorithmic logic, and dissecting software design patterns.</p>
+                  </div>
+                </li>
+                <li class="focus-card">
+                  <div class="fc-number">04</div>
+                  <div class="fc-body">
+                    <h3 class="fc-title">Cybersecurity Exploration</h3>
+                    <p class="fc-desc">Grasping networking foundations (TCP/IP, OSI layers), cryptographic concepts, and security-first engineering mindsets.</p>
+                  </div>
+                </li>
+                <li class="focus-card">
+                  <div class="fc-number">05</div>
+                  <div class="fc-body">
+                    <h3 class="fc-title">Product &amp; Startup Ideas</h3>
+                    <p class="fc-desc">Translating genuine daily friction into software concepts, validating workflows, and designing utility-driven digital products.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         03 / PROJECTS ("EXPERIMENTS IN PROGRESS")
+         ============================================== -->
+    <section id="experiments" class="experiments-section section-boundary" aria-labelledby="experiments-heading">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div class="section-index-tag">
+            <span class="idx-number">03</span>
+            <span class="idx-title">EXPERIMENTS IN PROGRESS</span>
+          </div>
+          <div class="section-breadcrumbs" aria-hidden="true">
+            INDEX // PROJECTS // LAB NOTEBOOK
+          </div>
+        </div>
+
+        <div class="experiments-intro-bar">
+          <h2 id="experiments-heading" class="section-display-heading">
+            Student concepts, prototypes, &amp; work-in-progress explorations.
+          </h2>
+          <p class="experiments-disclaimer">
+            Every entry represents honest student work — from conceptual system blueprints to active frontend experiments. No inflated claims; just thoughtful ideas in motion.
+          </p>
+        </div>
+
+        <!-- Project Index List (Asymmetric Editorial Layout) -->
+        <div class="projects-index-stack">
+
+          <!-- PROJECT 001: PARKEASE -->
+          <article class="project-entry-row" id="project-001">
+            <div class="project-col-meta">
+              <span class="proj-id-huge">001</span>
+              <div class="proj-tags">
+                <span class="tag-badge">CATEGORY // CONCEPT PROJECT</span>
+                <span class="status-badge concept-badge">STATUS: IN DEVELOPMENT / CONCEPT</span>
+              </div>
+            </div>
+
+            <div class="project-col-content">
+              <div class="proj-header-flex">
+                <h3 class="proj-title">PARKEASE</h3>
+                <span class="proj-type-tag">[SMART MOBILITY CONCEPT]</span>
+              </div>
+              <p class="proj-description">
+                A concept for simplifying parking discovery and making parking experiences easier to manage. Designed to address urban congestion and parking uncertainty through streamlined status allocation logic.
+              </p>
+              
+              <!-- Interactive Visual Preview: CSS/JS Simulated Parking Slot Radar -->
+              <div class="project-preview-box">
+                <div class="preview-box-header">
+                  <span class="pv-label">PROTOTYPE SIMULATOR // OCCUPANCY ALLOCATION TEST</span>
+                  <button type="button" class="sim-btn" id="parkease-sim-toggle" aria-label="Toggle parking simulator state">
+                    <span class="sim-icon">⚡</span> SIMULATE SENSOR UPDATE
+                  </button>
+                </div>
+                <div class="parkease-radar-grid" id="parkease-radar-display" aria-label="Interactive parking spot status grid">
+                  <div class="parking-bay bay-occupied" data-bay="A1">
+                    <span class="bay-id">A-01</span>
+                    <span class="bay-status">OCCUPIED</span>
+                  </div>
+                  <div class="parking-bay bay-vacant" data-bay="A2">
+                    <span class="bay-id">A-02</span>
+                    <span class="bay-status">VACANT</span>
+                  </div>
+                  <div class="parking-bay bay-vacant" data-bay="A3">
+                    <span class="bay-id">A-03</span>
+                    <span class="bay-status">VACANT</span>
+                  </div>
+                  <div class="parking-bay bay-occupied" data-bay="B1">
+                    <span class="bay-id">B-01</span>
+                    <span class="bay-status">OCCUPIED</span>
+                  </div>
+                  <div class="parking-bay bay-vacant" data-bay="B2">
+                    <span class="bay-id">B-02</span>
+                    <span class="bay-status">VACANT</span>
+                  </div>
+                  <div class="parking-bay bay-occupied" data-bay="B3">
+                    <span class="bay-id">B-03</span>
+                    <span class="bay-status">OCCUPIED</span>
+                  </div>
+                </div>
+                <div class="preview-box-footer">
+                  <span class="pv-metric" id="parkease-stat">SYSTEM STATUS: 3 / 6 SPOTS AVAILABLE</span>
+                  <span class="pv-note">Interactive preview rendered with vanilla DOM</span>
+                </div>
+              </div>
+
+              <div class="proj-footer-bar">
+                <div class="proj-tech-labels">
+                  <span class="tech-chip">CONCEPT SPECIFICATION</span>
+                  <span class="tech-chip">UI/UX BLUEPRINT</span>
+                  <span class="tech-chip">ALLOCATION LOGIC</span>
+                </div>
+                <div class="proj-action-link">
+                  <a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="View Kanishk's GitHub for ParkEase updates">
+                    <span>FOLLOW ON GITHUB</span>
+                    <span class="arr-icon" aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 002: WEB EXPERIMENTS -->
+          <article class="project-entry-row" id="project-002">
+            <div class="project-col-meta">
+              <span class="proj-id-huge">002</span>
+              <div class="proj-tags">
+                <span class="tag-badge">CATEGORY // INTERACTIVE LAB</span>
+                <span class="status-badge progress-badge">STATUS: ACTIVE LAB EXPERIMENTS</span>
+              </div>
+            </div>
+
+            <div class="project-col-content">
+              <div class="proj-header-flex">
+                <h3 class="proj-title">WEB EXPERIMENTS</h3>
+                <span class="proj-type-tag">[FRONTEND INTERACTION LAB]</span>
+              </div>
+              <p class="proj-description">
+                A growing collection of frontend experiments focused on layout, interaction, and user experience. Exploring the boundaries of raw vanilla web standards, editorial typography, and kinetic microinteractions without heavyweight dependencies.
+              </p>
+
+              <!-- Interactive Visual Preview: Live Typography Physics Lab -->
+              <div class="project-preview-box">
+                <div class="preview-box-header">
+                  <span class="pv-label">INTERACTIVE LAB // KINETIC TYPOGRAPHY TESTBENCH</span>
+                  <div class="lab-controls">
+                    <label for="font-stretch-slider" class="slider-label">TRACKING:</label>
+                    <input type="range" id="font-stretch-slider" min="-2" max="12" value="2" step="0.5" aria-label="Adjust letter tracking interactively">
+                  </div>
+                </div>
+                <div class="typography-lab-canvas" id="typo-lab-canvas">
+                  <div class="lab-live-text" id="lab-dynamic-text">SWISS_MODERNISM_&amp;_CODE</div>
+                  <div class="lab-sub-meta">VANILLA JS • CSS GRID • 60FPS CSS TRANSFORMS</div>
+                </div>
+                <div class="preview-box-footer">
+                  <span class="pv-metric" id="lab-metric">ACTIVE TRACKING: 2px</span>
+                  <span class="pv-note">Real-time CSS custom property manipulation</span>
+                </div>
+              </div>
+
+              <div class="proj-footer-bar">
+                <div class="proj-tech-labels">
+                  <span class="tech-chip">SEMANTIC HTML5</span>
+                  <span class="tech-chip">MODERN CSS GRID</span>
+                  <span class="tech-chip">VANILLA JS</span>
+                  <span class="tech-chip">KINETIC UI</span>
+                </div>
+                <div class="proj-action-link">
+                  <a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="Discover Kanishk's repositories on GitHub">
+                    <span>DISCOVER ON GITHUB</span>
+                    <span class="arr-icon" aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 003: NEXT EXPERIMENT -->
+          <article class="project-entry-row" id="project-003">
+            <div class="project-col-meta">
+              <span class="proj-id-huge">003</span>
+              <div class="proj-tags">
+                <span class="tag-badge">CATEGORY // RESEARCH &amp; IDEATION</span>
+                <span class="status-badge upcoming-badge">STATUS: UPCOMING IDEA</span>
+              </div>
+            </div>
+
+            <div class="project-col-content">
+              <div class="proj-header-flex">
+                <h3 class="proj-title">NEXT EXPERIMENT</h3>
+                <span class="proj-type-tag">[IDEATION PIPELINE]</span>
+              </div>
+              <p class="proj-description">
+                A placeholder for the next idea worth exploring. Currently formulating projects at the intersection of low-level systems programming in C/C++, network packet exploration, and developer productivity tools.
+              </p>
+
+              <!-- Stylized Conceptual Wireframe Preview -->
+              <div class="project-preview-box upcoming-box">
+                <div class="preview-box-header">
+                  <span class="pv-label">PIPELINE QUEUE // RESEARCH INCUBATOR</span>
+                  <span class="pv-pulse">● AWAITING COMPILATION</span>
+                </div>
+                <div class="upcoming-schematic">
+                  <div class="schematic-row">
+                    <span class="sc-key">INQUIRY 01:</span>
+                    <span class="sc-val">CLI-based developer utility in C / C++</span>
+                  </div>
+                  <div class="schematic-row">
+                    <span class="sc-key">INQUIRY 02:</span>
+                    <span class="sc-val">Network packet inspection &amp; protocol visualization</span>
+                  </div>
+                  <div class="schematic-row">
+                    <span class="sc-key">INQUIRY 03:</span>
+                    <span class="sc-val">Algorithmic execution visualizer for CS students</span>
+                  </div>
+                  <div class="schematic-cursor-line">
+                    <span class="sc-prompt">&gt; init_new_experiment.sh</span><span class="blink-cursor">_</span>
+                  </div>
+                </div>
+                <div class="preview-box-footer">
+                  <span class="pv-metric">STATUS: FORMULATING PROBLEM STATEMENT</span>
+                  <span class="pv-note">Open to ideas &amp; mentorship</span>
+                </div>
+              </div>
+
+              <div class="proj-footer-bar">
+                <div class="proj-tech-labels">
+                  <span class="tech-chip">SYSTEMS THINKING</span>
+                  <span class="tech-chip">PROBLEM VALIDATION</span>
+                  <span class="tech-chip">OPEN SOURCE ROADMAP</span>
+                </div>
+                <div class="proj-action-link">
+                  <span class="non-clickable-label">[IN PLANNING PHASE]</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Project Index Global Repository Callout -->
+        <div class="repo-global-banner">
+          <div class="rgb-content">
+            <span class="rgb-tag">CENTRAL CODE ARCHIVE</span>
+            <h3 class="rgb-title">Track all active student commits &amp; repositories on GitHub</h3>
+            <p class="rgb-desc">
+              Every small project, lab file, and experiment is tracked transparently at <a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer" class="inline-repo-link">github.com/vyaskanishk19</a>.
+            </p>
+          </div>
+          <div class="rgb-action">
+            <a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer" class="cta-button primary-cta">
+              <span>EXPLORE GITHUB ARCHIVE</span>
+              <span class="cta-icon-ext" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         04 / TOOLKIT ("THINGS I'M LEARNING")
+         ============================================== -->
+    <section id="toolkit" class="toolkit-section section-boundary" aria-labelledby="toolkit-heading">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div class="section-index-tag">
+            <span class="idx-number">04</span>
+            <span class="idx-title">TECHNICAL TOOLKIT</span>
+          </div>
+          <div class="section-breadcrumbs" aria-hidden="true">
+            INDEX // TOOLKIT // CURRENT CAPABILITIES
+          </div>
+        </div>
+
+        <div class="toolkit-intro-bar">
+          <h2 id="toolkit-heading" class="section-display-heading">Things I'm learning &amp; exploring.</h2>
+          <p class="toolkit-disclaimer">
+            A transparent inventory of programming languages, tools, and paradigms currently being studied. Categorized honestly by active depth of understanding — no inflated skill percentages.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="toolkit-filter-bar" role="toolbar" aria-label="Filter technologies by category">
+          <span class="filter-label">FILTER BY STAGE:</span>
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">ALL INVENTORY (8)</button>
+          <button type="button" class="filter-btn" data-filter="learning" aria-pressed="false">CURRENTLY LEARNING (3)</button>
+          <button type="button" class="filter-btn" data-filter="exploring" aria-pressed="false">EXPLORING (2)</button>
+          <button type="button" class="filter-btn" data-filter="familiar" aria-pressed="false">FAMILIAR WITH (3)</button>
+        </div>
+
+        <!-- Structured Editorial Toolkit Grid -->
+        <div class="toolkit-grid-container" id="toolkit-grid">
+
+          <!-- 01: C -->
+          <article class="toolkit-card" data-category="learning" tabindex="0">
+            <div class="tk-card-top">
+              <span class="tk-code-file">std_c.h</span>
+              <span class="stage-badge badge-learning">CURRENTLY LEARNING</span>
+            </div>
+            <h3 class="tk-name">C</h3>
+            <p class="tk-summary">Foundational systems programming language.</p>
+            <div class="tk-details">
+              <p class="tk-notes">
+                Studying memory allocation (malloc/free), pointer mechanics, arrays, struct definitions, and writing procedural computational logic from the ground up.
+              </p>
+              <div class="tk-subtag-row">
+                <span class="micro-tag">Pointers</span>
+                <span class="micro-tag">Memory Management</span>
+                <span class="micro-tag">Procedural Logic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02: C++ -->
+          <article class="toolkit-card" data-category="learning" tabindex="0">
+            <div class="tk-card-top">
+              <span class="tk-code-file">main.cpp</span>
+              <span class="stage-badge badge-learning">CURRENTLY LEARNING</span>
+            </div>
+            <h3 class="tk-name">C++</h3>
+            <p class="tk-summary">Object-oriented &amp; algorithmic problem-solving.</p>
+            <div class="tk-details">
+              <p class="tk-notes">
+                Expanding C foundations into classes, object-oriented design, encapsulation, and foundational usage of the Standard Template Library (STL vectors, algorithms).
+              </p>
+              <div class="tk-subtag-row">
+                <span class="micro-tag">OOP Concepts</span>
+                <span class="micro-tag">STL Containers</span>
+                <span class="micro-tag">Algorithms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03: HTML -->
+          <article class="toolkit-card" data-category="learning" tabindex="0">
+            <div class="tk-card-top">
+              <span class="tk-code-file">index.html</span>
+              <span class="stage-badge badge-learning">CURRENTLY LEARNING</span>
+            </div>
+            <h3 class="tk-name">HTML</h3>
+            <p class="tk-summary">Semantic structuring &amp; accessible web hierarchy.</p>
+            <div class="tk-details">
+              <p class="tk-notes">
+                Writing robust semantic HTML5 documents, proper ARIA landmarks, SEO metadata, form controls, and accessible document outline structures.
+              </p>
+              <div class="tk-subtag-row">
+                <span class="micro-tag">Semantic HTML5</span>
+                <span class="micro-tag">Accessibility / ARIA</span>
+                <span class="micro-tag">Landmarks</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04: CSS -->
+          <article class="toolkit-card" data-category="learning" tabindex="0">
+            <div class="tk-card-top">
+              <span class="tk-code-file">style.css</span>
+              <span class="stage-badge badge-learning">CURRENTLY LEARNING</span>
+            </div>
+            <h3 class="tk-name">CSS</h3>
+            <p class="tk-summary">Responsive architecture, CSS Grid &amp; typography.</p>
+            <div class="tk-details">
+              <p class="tk-notes">
+                Designing responsive layouts using CSS Grid, Flexbox, custom properties, fluid typography with clamp(), and Swiss editorial composition techniques.
+              </p>
+              <div class="tk-subtag-row">
+                <span class="micro-tag">CSS Grid / Flexbox</span>
+                <span class="micro-tag">Fluid Typography</span>
+                <span class="micro-tag">Responsive Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05: JavaScript -->
+          <article class="toolkit-card" data-category="exploring" tabindex="0">
+            <div class="tk-card-top">
+              <span class="tk-code-file">script.js</span>
+              <span class="stage-badge badge-exploring">EXPLORING</span>
+            </div>
+            <h3 class="tk-name">JavaScript</h3>
+            <p class="tk-summary">Vanilla DOM manipulation &amp; interactive browser logic.</p>
+            <div class="tk-details">
+              <p class="tk-notes">
+                Exploring pure vanilla JavaScript: event delegation, DOM manipulation, asynchronous flow, IntersectionObserver, and client-side command parsing.
+              </p>
+              <div class="tk-subtag-row">
+                <span class="micro-tag">Vanilla DOM API</span>
+                <span class="micro-tag">Event Handling</span>
+                <span class="micro-tag">Async Patterns</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 06: Cybersecurity Fundamentals -->
+          <article class="toolkit-card" data-category="exploring" tabindex="0">
+            <div class="tk-card-top">
+              <span class="tk-code-file">sec_recon.log</span>
+              <span class="stage-badge badge-exploring">EXPLORING</span>
+            </div>
+            <h3 class="tk-name">Cybersecurity Fundamentals</h3>
+            <p class="tk-summary">Network protocols, vulnerability concepts, and defense.</p>
+            <div class="tk-details">
+              <p class="tk-notes">
+                Diving into networking layers (TCP/IP, UDP, DNS, HTTP), authentication principles, reconnaissance basics, and foundational web security concepts.
+              </p>
+              <div class="tk-subtag-row">
+                <span class="micro-tag">Networking Protocols</span>
+                <span class="micro-tag">Security Principles</span>
+                <span class="micro-tag">Defensive Mindset</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 07: Git -->
+          <article class="toolkit-card" data-category="familiar" tabindex="0">
+            <div class="tk-card-top">
+              <span class="tk-code-file">.gitconfig</span>
+              <span class="stage-badge badge-familiar">FAMILIAR WITH</span>
+            </div>
+            <h3 class="tk-name">Git</h3>
+            <p class="tk-summary">Distributed version control &amp; history integrity.</p>
+            <div class="tk-details">
+              <p class="tk-notes">
+                Managing local version history, branch workflows, staging hygiene, descriptive atomic commits, and merge resolution fundamentals.
+              </p>
+              <div class="tk-subtag-row">
+                <span class="micro-tag">Version Control</span>
+                <span class="micro-tag">Branching</span>
+                <span class="micro-tag">Commit Hygiene</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 08: GitHub -->
+          <article class="toolkit-card" data-category="familiar" tabindex="0">
+            <div class="tk-card-top">
+              <span class="tk-code-file">README.md</span>
+              <span class="stage-badge badge-familiar">FAMILIAR WITH</span>
+            </div>
+            <h3 class="tk-name">GitHub</h3>
+            <p class="tk-summary">Remote repositories, building in public &amp; documentation.</p>
+            <div class="tk-details">
+              <p class="tk-notes">
+                Maintaining remote repositories, publishing student code, managing markdown documentation, tracking issues, and building an open-source footprint.
+              </p>
+              <div class="tk-subtag-row">
+                <span class="micro-tag">Remote Repositories</span>
+                <span class="micro-tag">Building in Public</span>
+                <span class="micro-tag">Documentation</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SIGNATURE INTERACTION — THE DIGITAL TERMINAL
+         ============================================== -->
+    <section id="terminal" class="terminal-section section-boundary" aria-labelledby="terminal-heading">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div class="section-index-tag">
+            <span class="idx-number">&gt;_</span>
+            <span class="idx-title">DIGITAL WORKSTATION</span>
+          </div>
+          <div class="section-breadcrumbs" aria-hidden="true">
+            INDEX // WORKSTATION // CLI INTERFACE
+          </div>
+        </div>
+
+        <div class="terminal-editorial-intro">
+          <h2 id="terminal-heading" class="section-display-heading">The Digital Terminal Workstation</h2>
+          <p class="terminal-subtext">
+            An interactive command-line environment directly embedded in Kanishk's digital HQ. Type commands to navigate, query profile attributes, inspect projects, or trigger actions safely.
+          </p>
+        </div>
+
+        <!-- Terminal Shell Container -->
+        <div class="terminal-window" role="region" aria-label="Interactive Terminal Workstation">
+          
+          <!-- Terminal Chrome Window Header -->
+          <div class="terminal-window-header">
+            <div class="term-window-controls" aria-hidden="true">
+              <span class="control-dot dot-close"></span>
+              <span class="control-dot dot-minimize"></span>
+              <span class="control-dot dot-expand"></span>
+            </div>
+            <div class="term-window-title">
+              <span class="tw-icon">⚡</span>
+              <span class="tw-path">kanishk@kv-hq:~ (zsh)</span>
+            </div>
+            <div class="term-window-status">
+              <span class="term-online-badge">● ONLINE</span>
+            </div>
+          </div>
+
+          <!-- Quick Action Commands Toolbar (For Mobile & Fast Tap) -->
+          <div class="terminal-quick-bar" aria-label="Quick terminal commands">
+            <span class="tq-label">QUICK RUN:</span>
+            <button type="button" class="tq-pill" data-command="help">help</button>
+            <button type="button" class="tq-pill" data-command="about">about</button>
+            <button type="button" class="tq-pill" data-command="projects">projects</button>
+            <button type="button" class="tq-pill" data-command="toolkit">toolkit</button>
+            <button type="button" class="tq-pill" data-command="github">github</button>
+            <button type="button" class="tq-pill" data-command="clear">clear</button>
+          </div>
+
+          <!-- Terminal Output Screen -->
+          <div class="terminal-screen" id="terminal-screen" tabindex="0" role="log" aria-live="polite">
+            <div class="term-line term-system-banner">
+              =======================================================<br>
+              KV / DIGITAL WORKSTATION [v1.0.4]<br>
+              HOST: JAIPUR, RAJASTHAN, INDIA // B.TECH CSE (YEAR 01)<br>
+              TYPE &apos;<span class="term-cmd-highlight">help</span>&apos; TO VIEW AVAILABLE SYSTEM COMMANDS.<br>
+              =======================================================
+            </div>
+            <!-- Dynamic command entries appended here via vanilla JS -->
+          </div>
+
+          <!-- Terminal Input Row -->
+          <form class="terminal-input-form" id="terminal-form" autocomplete="off" spellcheck="false">
+            <label for="terminal-input" class="term-input-prompt">
+              <span class="term-prompt-user">kanishk</span><span class="term-prompt-at">@</span><span class="term-prompt-host">kv-hq</span>:<span class="term-prompt-path">~</span><span class="term-prompt-dollar">$</span>
+            </label>
+            <input 
+              type="text" 
+              id="terminal-input" 
+              class="terminal-input-field" 
+              placeholder="type 'help' and press Enter..." 
+              autocomplete="off" 
+              autocapitalize="off" 
+              spellcheck="false" 
+              aria-label="Terminal command input"
+            >
+            <button type="submit" class="terminal-submit-btn" aria-label="Execute command">RUN ↵</button>
+          </form>
+
+          <div class="terminal-footer-hint">
+            <span>TIP: Use <kbd class="term-kbd">↑</kbd> and <kbd class="term-kbd">↓</kbd> arrow keys to navigate command history. All inputs are safely validated.</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         06 / CONTACT SECTION ("OPEN A NEW CONNECTION")
+         ============================================== -->
+    <section id="contact" class="contact-section section-boundary" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div class="section-index-tag">
+            <span class="idx-number">05</span>
+            <span class="idx-title">OPEN A NEW CONNECTION</span>
+          </div>
+          <div class="section-breadcrumbs" aria-hidden="true">
+            INDEX // CONTACT // GITHUB
+          </div>
+        </div>
+
+        <div class="contact-editorial-layout">
+          
+          <div class="contact-headline-block">
+            <p class="section-micro-label">[ COLLABORATION &amp; INQUIRY ]</p>
+            <h2 id="contact-heading" class="contact-massive-heading">
+              GOOD IDEAS START WITH A CONVERSATION.
+            </h2>
+            <p class="contact-lead-text">
+              Have an interesting project, a learning resource, or an idea worth exploring? Let's connect.
+            </p>
+          </div>
+
+          <!-- Contact Cards Grid -->
+          <div class="contact-cards-grid">
+            
+            <!-- Primary Destination: GitHub Card -->
+            <div class="contact-card primary-contact-card">
+              <div class="cc-tag-row">
+                <span class="cc-tag">PRIMARY DESTINATION</span>
+                <span class="cc-verified">● ACTIVE CODEBASE</span>
+              </div>
+              <h3 class="cc-title">GitHub Profile</h3>
+              <p class="cc-desc">
+                Follow my learning journey, explore current experiments, read open issues, and inspect repository commits.
+              </p>
+              <div class="cc-handle-box">
+                <span class="handle-label">PROFILE:</span>
+                <span class="handle-val">github.com/vyaskanishk19</span>
+              </div>
+              <div class="cc-action-row">
+                <a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer" class="cta-button primary-cta" aria-label="Open Kanishk's GitHub in a new tab">
+                  <span>VISIT GITHUB PROFILE</span>
+                  <span class="cta-icon-ext" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Context & Academic Base Card -->
+            <div class="contact-card secondary-contact-card">
+              <div class="cc-tag-row">
+                <span class="cc-tag">CURRENT COORDINATES</span>
+                <span class="cc-verified">STUDY BASE</span>
+              </div>
+              <h3 class="cc-title">Base &amp; Academics</h3>
+              <ul class="cc-details-list">
+                <li><span class="cc-item-label">LOCATION:</span> <span class="cc-item-val">Jaipur, Rajasthan, India</span></li>
+                <li><span class="cc-item-label">PROGRAM:</span> <span class="cc-item-val">B.Tech Computer Science Engineering</span></li>
+                <li><span class="cc-item-label">ACADEMIC YEAR:</span> <span class="cc-item-val">First Year (2024–2028)</span></li>
+                <li><span class="cc-item-label">INQUIRIES:</span> <span class="cc-item-val">Open to student collaborations &amp; peer learning</span></li>
+              </ul>
+              <div class="cc-note-box">
+                <span class="note-icon">ℹ</span>
+                <span class="note-text">For direct messages or code reviews, open a GitHub discussion or repository issue.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Return to Top Action -->
+          <div class="back-to-top-container">
+            <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll back to top of the page">
+              <span class="btt-arrow">↑</span>
+              <span class="btt-text">BACK TO TOP OF PAGE</span>
+              <span class="btt-code">[INDEX 01]</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================
+       SYSTEM FOOTER
+       ============================================== -->
+  <footer class="system-footer" role="contentinfo">
+    <div class="container footer-container">
+      
+      <div class="footer-top-row">
+        <div class="footer-brand-col">
+          <div class="footer-logo">KV/01 — DIGITAL HQ</div>
+          <p class="footer-motto">
+            "An evolving digital space documenting the journey of a future software engineer."
+          </p>
+        </div>
+        <div class="footer-nav-col">
+          <span class="f-nav-title">DIRECTORIES</span>
+          <ul class="f-nav-list">
+            <li><a href="#hero">01 / Index</a></li>
+            <li><a href="#about">02 / About</a></li>
+            <li><a href="#experiments">03 / Experiments</a></li>
+            <li><a href="#toolkit">04 / Toolkit</a></li>
+            <li><a href="#contact">05 / Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-ext-col">
+          <span class="f-nav-title">CONNECTIVITY</span>
+          <ul class="f-nav-list">
+            <li><a href="https://github.com/vyaskanishk19" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a></li>
+            <li><span class="footer-coord-label">Base: Jaipur, India</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider-line" aria-hidden="true"></div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-copyright-item">
+          DESIGNED &amp; BUILT BY KANISHK VYAS
+        </div>
+        <div class="footer-work-item">
+          AN EVOLVING WORK IN PROGRESS
+        </div>
+        <div class="footer-year-item">
+          &copy; <span id="current-year">2026</span> KANISHK VYAS. ALL RIGHTS RESERVED.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
